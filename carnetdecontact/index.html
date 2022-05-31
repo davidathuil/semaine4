@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+
+    <title>Carnet de contact</title>
+</head>
+<body>
+    <div class="btn">
+    <button class="NewElement" onclick='populateTableList()'>Show All</button>>
+    <button class="add" onclick='saisirNom()'>add</button>>
+    <button class="LessElement"onclick='SuprTableList()'>Supr</button>>
+    </div>    
+    <!-- Table  -->
+    <table id="dataTable" class="table table-image">
+        <thead class="thead-dark">
+          <tr class="text-center">
+            <form id ="inscriptions">
+            <th>Type personnel/professionel"<select id="Type" name="Type"> 
+              <option value="pro">Professionel</option>
+              <option value="parti">Particulier</option>
+            </select></th>
+            <th>prénom<input type="text" class="prenomi" id="prenom" name="prenom" placeholder="pierre"/></th>
+            <th>Nom<input type="text" id="nom" name="nom" placeholder="dupont"/></th>
+            <th>mail<input type="text" id="mail" name="mail"placeholder="@"/></th>
+            <th>tel<input type="text" id="telI" name="tel" placeholder="060000"/></th>
+            <th>Adresse<input type="text" id="Adresse" name="Adresse" placeholder="Adresse"/></th>
+            <th>NomEntreprise<input type="text" id="Nomentreprise" name="NomEntreprise" placeholder="Entreprise"/></th> 
+            <th>Action1<input type="submit" value="Inscription"></th>
+          </form>
+          </tr>
+        </thead>
+        <!-- Table body with the list of products -->
+        <tbody id="NameList">
+        </tbody>
+      </table>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">AFFICHER @getbootstrap</button>
+
+<table id="Tablefiltre" class="table table-image">
+  <thead class="thead-dark">
+    <tr class="text-center">
+      <form id="formfilid">
+        <th>Type personnel/professionel"<select id="Type" name="Type">
+          <option value="pro">Professionel</option>
+          <option value="parti">Particulier</option>
+        </select></th>
+        <th>prénom<input type="text" class="prenomi" id="prenomF" name="prenom" placeholder="fltr prenom"/></th>
+        <th>Nom<input type="text" id="nomF" name="nom" placeholder="filtre nom"/></th>
+        <th>mail<input type="text" id="mailF" name="mail"placeholder="filtre mail"/></th>
+        <th>tel<input type="text" id="telF" name="tel" placeholder="filtre tel"/></th>
+        <th>Adresse<input type="text" id="Adresse" name="Adresse" placeholder="Adresse"/></th>
+        <th>NomEntreprise<input type="text" id="Nomentreprise" name="NomEntreprise" placeholder="Entreprise"/></th> 
+        <th>Action1<input type="button" id="filtre" value="Filtrer"></th>
+
+    </form>
+    </tr>
+  </thead>
+  <!-- Table body with the list of products -->
+  <tbody id="FiltreTa">
+  </tbody>
+</table>
+
+
+
+
+    <script type="text/javascript" src="script.js">
+
+    </script>    
+</body>
+</html>
